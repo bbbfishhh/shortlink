@@ -1,5 +1,7 @@
 package org.bbbfish.shortlink.admin.dao.entity;
 
+import com.baomidou.mybatisplus.annotation.FieldFill;
+import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 
@@ -50,16 +52,19 @@ public class UserDo implements Serializable {
     /**
      * create_time
      */
+    @TableField(fill = FieldFill.INSERT)
     private Date createTime;
 
     /**
      * update_time
      */
+    @TableField(fill = FieldFill.UPDATE)
     private Date updateTime;
 
     /**
      * del_flag
      */
+    @TableField(fill = FieldFill.INSERT)
     private Integer delFlag;
 
 }
