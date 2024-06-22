@@ -1,4 +1,4 @@
-package org.bbbfish.shortlink.admin.config;
+package org.bbbfish.shortlink.project.config;
 
 import com.baomidou.mybatisplus.core.handlers.MetaObjectHandler;
 import org.apache.ibatis.reflection.MetaObject;
