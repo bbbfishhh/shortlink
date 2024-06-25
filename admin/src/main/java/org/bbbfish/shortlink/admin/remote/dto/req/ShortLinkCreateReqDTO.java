@@ -1,5 +1,6 @@
 package org.bbbfish.shortlink.admin.remote.dto.req;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
 
 import java.util.Date;
@@ -34,11 +35,19 @@ public class ShortLinkCreateReqDTO {
     /**
      * valid_date
      */
+    @JsonFormat(pattern = "yyyy-MM-dd HH::mm::ss", timezone = "GMT+8")
     private Date validDate;
+
+    /**
+     * create_time
+     */
+    @JsonFormat(pattern = "yyyy-MM-dd HH::mm::ss", timezone = "GMT+8")
+    private Date createTime;
 
     /**
      * describe
      */
     private String describe;
+
 
 }
