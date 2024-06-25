@@ -40,7 +40,7 @@ public class GroupController {
         return Results.success();
     }
 
-    @PostMapping("/api/short-link/admin/v1/group")
+    @PostMapping("/api/short-link/admin/v1/group/sort")
     public Result<Void> sortGroup(@RequestBody List<ShortLinkGroupSortReqDTO> requestParam){
         groupService.sortGroup(requestParam);
         return Results.success();
