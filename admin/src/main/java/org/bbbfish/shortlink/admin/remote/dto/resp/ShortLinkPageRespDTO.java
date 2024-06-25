@@ -1,4 +1,4 @@
-package org.bbbfish.shortlink.project.dto.resp;
+package org.bbbfish.shortlink.admin.remote.dto.resp;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
